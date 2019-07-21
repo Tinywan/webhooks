@@ -30,4 +30,4 @@ server {
 
 ### 配置[Github hooks](https://github.com/Tinywan/webhooks/settings/hooks)
 
-![image](./)  
+![image](./github.png)  
