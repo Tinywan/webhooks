@@ -1,7 +1,7 @@
 ##  简单的 webhooks
 
 
-### 拉去代码
+### 获取代码
 
 ```shell
 git clone https://github.com/Tinywan/webhooks.git
@@ -32,3 +32,7 @@ server {
 ### 配置[Github hooks](https://github.com/Tinywan/webhooks/settings/hooks)
 
 ![image](./github.png)  
+
+### 提交后的日志
+
+![image](./log.png)  
