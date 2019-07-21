@@ -2,12 +2,8 @@
 error_reporting(1);
 
 // 配置 github 需要配置的 Secret
-$secret = '1989BC88338CB4DABEF20BD7C54FD0D6';
-
+$secret = 'b3K2E1uNq0X9PYIjptyR5clkBe7JwvFASQxrohaDTMLg68CZ'; // 这是是自定义生成的
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
-
-// 默认签名字符串
-//$signature = 'sha1=e0ec9317f440f3fd47631852ef585c6b2680e8f8';
 
 // 匹配 Github 钩子事件
 if (substr_count($userAgent, 'GitHub') >= 1) {
