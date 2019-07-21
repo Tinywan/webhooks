@@ -20,10 +20,11 @@ $checkHash = hash_hmac($hash_type, $jsonContent, $secret); // e0ec9317f440f3fd47
 $fs = fopen('./auto_hook.log', 'a');
 $data = json_decode($jsonContent, true);
 if(empty($data)){
-    exit("错误的请求");
+    exit("非法的请求");
 }
 
-fwrite($fs, date("Y-m-d H:i:s") . ': 当前仓库名称 [' . $data['pusher']['name'] . ']' . PHP_EOL);
+fwrite($fs, date("Y-m-d H:i:s") . ': 仓库名称 [' . $data['repository']['full_name'] . ']' . PHP_EOL);
+fwrite($fs, date("Y-m-d H:i:s") . ': 提交消息 [' . $data['commits']['message'] . ']' . PHP_EOL);
 
 // sha1 验证
 if ($checkHash && $checkHash === $hash_value) {
