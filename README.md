@@ -27,6 +27,7 @@ server {
     }
 }
 ```
+> 保证改地址可以正常访问：http://www.webhook.com
 
 ### 配置[Github hooks](https://github.com/Tinywan/webhooks/settings/hooks)
 
